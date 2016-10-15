@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<p id="p1">Click a button to change the style of this text.</p>
+
+<button type="button" onclick="changeColor()">Change Color</button>
+<br><button type="button" onclick="bigFont()">Bigger Font</button>
+<br><button type="button" onclick="smallFont()">Smaller Font</button>
+<br><button type="button" onclick="hideText()">Hide Text</button>
+<br><button type="button" onclick="showText()">Show Text</button>
+
+<script>
+
+function changeColor() {
+	document.getElementById("p1").style.color="blue";
+}
+
+function bigFont() {
+	document.getElementById("p1").style.fontSize="larger";
+}
+
+function smallFont() {
+	document.getElementById("p1").style.fontSize="smaller";
+}
+
+function hideText() {
+	document.getElementById("p1").style.visibility="hidden";
+}
+
+function showText() {
+	document.getElementById("p1").style.visibility="visible";
+}
+
+</script>
+</body>
+</html>
